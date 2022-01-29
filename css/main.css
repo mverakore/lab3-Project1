@@ -126,6 +126,23 @@ textarea {
      font-weight: bold;
    }
 
+   .thingsOfAbove,
+   .thingsOfAbove_tabs {
+     display: none;
+   }
+
+   .footer_aboutUs,
+   .footer_flickerPhotos,
+   .footer_newsletter,
+   .form-email{
+     display: none;
+   }
+
+  .recent_tweet_header {
+    font-weight: bold;
+  }
+
+
    /* Small only */
 @media screen and (max-width: 39.9375em) {}
 
