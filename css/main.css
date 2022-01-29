@@ -13,13 +13,9 @@
 
 html {
   color: #222;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   font-size: 1em;
   line-height: 1.4;
-}
-
-img {
-  width: 100%;
 }
 
 .header,.h2 {
@@ -97,13 +93,38 @@ textarea {
   Layout 
    ========================================================================== */
 
-   .heading {
-     text-align: center;
+   .header_banner {
+     display: flex;
    }
 
-   
+   .metropolis_logo {
+     padding: 10px;
+     width: 35px;
+     height: 35px;
+   }
 
+   .hamburger_menu {
+     position: absolute;
+     right: 0%;
+     width: 35px;
+     height: 35px;
+   }
 
+   .menu {
+     display: none;
+   }
+
+   .banner_image {
+     display: none;
+   }
+
+   .things_we_do_content {
+     color: #939393;
+   }
+
+   .things_we_do_topic {
+     font-weight: bold;
+   }
 
    /* Small only */
 @media screen and (max-width: 39.9375em) {}
