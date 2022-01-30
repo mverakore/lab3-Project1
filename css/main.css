@@ -110,14 +110,6 @@ textarea {
      height: 40px;
    }
 
-   .menu {
-     display: none;
-   }
-
-   .banner_image {
-     display: none;
-   }
-
    .things_we_do_content {
      color: #939393;
    }
@@ -126,21 +118,6 @@ textarea {
      font-weight: bold;
    }
 
-   .thingsOfAbove,
-   .thingsOfAbove_tabs {
-     display: none;
-   }
-
-   .footer_aboutUs,
-   .footer_flickerPhotos,
-   .footer_newsletter,
-   .form-email{
-     display: none;
-   }
-
-  .recent_tweet_header {
-    font-weight: bold;
-  }
 
   .h2_desc {
     color: #939393;
@@ -232,7 +209,34 @@ textarea {
   }
 
    /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 39.9375em) {
+
+  .thingsOfAbove,
+  .thingsOfAbove_tabs {
+    display: none;
+  }
+
+  .footer_aboutUs,
+  .footer_flickerPhotos,
+  .footer_newsletter,
+  .form-email{
+    display: none;
+  }
+
+ .recent_tweet_header {
+   font-weight: bold;
+ }
+ 
+ .menu {
+  display: none;
+}
+
+.banner_image {
+  display: none;
+}
+
+
+}
 
 
 /* Medium and up */
