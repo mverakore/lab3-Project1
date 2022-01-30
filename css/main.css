@@ -106,8 +106,8 @@ textarea {
    .hamburger_menu {
      position: absolute;
      right: 0%;
-     width: 35px;
-     height: 35px;
+     width: 40px;
+     height: 40px;
    }
 
    .menu {
@@ -142,6 +142,94 @@ textarea {
     font-weight: bold;
   }
 
+  .h2_desc {
+    color: #939393;
+  }
+
+  /* things we do */
+  .web_solution img {
+    width: 35px;
+    height: 35px;
+    border: solid 2px #feb902;
+    padding: 15px;
+  }
+
+
+  .photography img {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #25c389;
+    padding: 15px;
+  }
+
+  .web_development img {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #e7615e;
+    padding: 15px;
+  }
+
+  .web_design img {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #1fa8d4;
+    padding: 15px;
+  }
+
+  .things_we_do_header {
+    font-weight: bold;
+  }
+
+  .things_we_do_content {
+    color: #939393;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: #16242f;
+  }
+
+  .tweetContent{
+    color: #ffff;
+  }
+
+  .tweets_tweet1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .tweets_tweet1 {
+    display: flex;
+  }
+
+  .tweets_tweet2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .tweets_tweet2 {
+    display: flex;
+  }
+
+  .profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .author_content {
+    color: white;
+    font-style: italic;
+  }
+
+  .author_name {
+    color: white;
+  }
 
    /* Small only */
 @media screen and (max-width: 39.9375em) {}
