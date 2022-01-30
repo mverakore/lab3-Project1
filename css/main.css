@@ -227,7 +227,7 @@ textarea {
     font-style: italic;
   }
 
-  .author_name {
+  .author_name,.recent_tweet_header {
     color: white;
   }
 
