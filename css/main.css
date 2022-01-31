@@ -196,31 +196,31 @@ textarea {
 
   /* things we do */
   .web_solutions img {
-    width: 35px;
-    height: 35px;
-    border: solid 2px #feb902;
-    padding: 15px;
+    width: 2em;
+    height: 2em;
+    border: solid 0.2em #feb902;
+    padding: 1em;
   }
 
   .photography img {
-    width: 40px;
-    height: 40px;
-    border: solid 2px #25c389;
-    padding: 15px;
+    width: 2em;
+    height: 2em;
+    border: solid 0.2em #25c389;
+    padding: 1em;
   }
 
   .web_development img {
-    width: 40px;
-    height: 40px;
-    border: solid 2px #e7615e;
-    padding: 15px;
+    width: 2em;
+    height: 2em;
+    border: solid 0.2em #e7615e;
+    padding: 1em;
   }
 
   .web_design img {
-    width: 40px;
-    height: 40px;
-    border: solid 2px #1fa8d4;
-    padding: 15px;
+    width: 2em;
+    height: 2em;
+    border: solid 0.2em #1fa8d4;
+    padding: 1em;
   }
 
   .things_we_do_header {
@@ -235,6 +235,7 @@ textarea {
 
   footer {
     background-color: #16242f;
+    width: 100%;
   }
 
   .tweetContent{
@@ -252,7 +253,7 @@ textarea {
     display: flex;
   }
 
-  .tweets_tweet2 img {
+  .twtUser_img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -347,7 +348,7 @@ textarea {
     display: none;
   }
 
-  .menu {
+  .menu,.banner{
     display: none;
   }
 
@@ -370,10 +371,14 @@ textarea {
     .things_we_do_header {
       grid-column: 2;
       grid-row: 1;
+      margin: 0%;
     }
+
     .things_we_do_content {
       grid-column: 2;
       grid-row: 2;
+      margin: 0%;
+      
     }
 
     .images_post{
@@ -389,21 +394,27 @@ textarea {
       grid-template-rows: 60% 40%;
       background-color: #e7615e;
       color: white;
-      height: 4em;
-      width: 5em;
+      height: 3em;
+      width: 4em;
       position: absolute;
+      padding-top: 0.3em;
+      text-align: center;
     }
   
     .date {
       grid-row: 1;
     }
-  
+
     .day {
       grid-row: 2;
     }
+
+    .november {
+      font-size: 0.8em;
+    }
   
     .blue_box_camera {
-      display: grid;
+      display: flex;
       grid-template-columns: 75% 25%;
       grid-template-rows: repeat(2, 1fr);
       background-color: #1fa8d4;
@@ -413,17 +424,20 @@ textarea {
       bottom: 0;
       height: 2em;
     }
+
+  .image_post_sample {
+    margin-bottom: 1em;
+  }
+
+  .blue_box_camera_img {
+    padding: 0.5em;
+  }
   
   .whatsUpLately_img_desc {
     grid-column: 1;
     grid-row: 1;
-    font-size: 1.5em;
   }
   
-  .small_photography {
-    grid-column: 1;
-    grid-row: 2;
-  }
 
   .lastestProjects_group {
     display: grid;
@@ -435,6 +449,24 @@ textarea {
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
+  .menu {
+    display: flex;
+  }
+
+}
+
+/*Medium only */
+@media screen and (min-width: 40em) and 
+(max-width: 63.9375em) {
+
+  .menu {
+    display: flex;
+  }
+
+  .hamburger_menu {
+    display: none;
+  }
+
 }
 
 
@@ -444,6 +476,33 @@ textarea {
 
   body {
   
+  }
+
+/* SORRY if there was a grid for this but pls grid this up */
+  .menu {
+    display: flex;
+    position: absolute;
+  }
+
+  .hamburger_menu {
+    display: none;
+  }
+    
+  .banner {
+    display: grid;
+  }
+
+  .banner > button {
+    height: 3em;
+    width: 3em;
+  }
+
+  .banner_image {
+    display: grid;
+  }
+
+  .banner_image_menu{
+    display: grid;
   }
 
   .main_content {
@@ -610,11 +669,14 @@ display: none;
 
 
 
-
-
 /* Large only */
 @media screen and (min-width: 64em) and 
-(max-width: 74.9375em) {}
+(max-width: 74.9375em) {
+
+
+
+
+}
 
 
 /* ==========================================================================
@@ -793,3 +855,6 @@ display: none;
   h3 {
     page-break-after: avoid;
   }
+}
+
+}
