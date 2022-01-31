@@ -95,27 +95,83 @@ textarea {
 
    .header_banner {
      display: flex;
+     align-items: center;
+     margin: 0;
    }
+
+   ul {
+    list-style: none;
+    margin: 0;
+  }
 
    .metropolis_logo {
-     padding: 10px;
-     width: 35px;
-     height: 35px;
-   }
-
-   .hamburger_menu {
-     position: absolute;
-     right: 0%;
-     width: 40px;
-     height: 40px;
+    margin-left: .7em;
+    height: 1.5em;
+    width: 1.5em;
    }
 
    .menu {
-     display: none;
+     color: white;
    }
 
-   .banner_image {
-     display: none;
+   .menu_button {
+     display: flex;
+     justify-content: center;
+   }
+
+   .banner {
+     position: relative;
+     width: 100%;
+   }
+
+   .banner_image_full {
+    background-color: rgb(238, 238, 238);
+   }
+
+   .banner_text {
+     position: absolute;
+     background-color: white;
+   }
+
+   .menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 5em;
+    width: 26em;
+    right: 0;
+  }
+
+  .menu_button {
+    display: grid;
+    grid-template-rows: 70% 30%;
+  }
+
+  .menu_button_icons {
+    grid-row: 1;
+  }
+
+  .menu_button {
+
+  }
+
+   .menu_home1 {
+     background-color: #25c389;
+   }
+
+   .menu_pages {
+     background-color: #feb902;
+   }
+
+   .menu_blogs {
+     background-color: #e7615e;
+   }
+
+   .menu_portfolio {
+     background-color: #1fa8d4;
+   }
+
+   .menu_home2 {
+     background-color: #16242f;
    }
 
    .things_we_do_content {
@@ -124,18 +180,6 @@ textarea {
 
    .things_we_do_topic {
      font-weight: bold;
-   }
-
-   .thingsOfAbove,
-   .thingsOfAbove_tabs {
-     display: none;
-   }
-
-   .footer_aboutUs,
-   .footer_flickerPhotos,
-   .footer_newsletter,
-   .form-email{
-     display: none;
    }
 
   .recent_tweet_header {
@@ -147,13 +191,12 @@ textarea {
   }
 
   /* things we do */
-  .web_solution img {
+  .web_solutions img {
     width: 35px;
     height: 35px;
     border: solid 2px #feb902;
     padding: 15px;
   }
-
 
   .photography img {
     width: 40px;
@@ -232,22 +275,306 @@ textarea {
   }
 
    /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 39.9375em) {
+
+  html {
+    display: flex;
+    justify-content: center;
+  }
+
+  body{
+    width: 70%;
+  }
+
+  .header_banner{
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    position: absolute;
+    right: 20%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .thingsOfAbove,
+  .thingsOfAbove_tabs {
+    display: none;
+  }
+
+  .footer_aboutUs,
+  .footer_flickerPhotos,
+  .footer_newsletter,
+  .form-email{
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .banner_image {
+    display: none;
+  }
+
+  .thingsWeDo_groups {
+    height: 20em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 2em auto;
+  }
+    
+    .thingsWeDo_img {
+      grid-column: 1;
+      grid-row: 1 / 2;
+    }
+    .things_we_do_header {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .things_we_do_content {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .images_post{
+      gap: 1em;
+    }
+    .image_post_sample {
+      display: grid;
+      position: relative;
+    }
+  
+    .date_group {
+      display: grid;
+      grid-template-rows: 60% 40%;
+      background-color: #e7615e;
+      color: white;
+      height: 4em;
+      width: 5em;
+      position: absolute;
+    }
+  
+    .date {
+      grid-row: 1;
+    }
+  
+    .day {
+      grid-row: 2;
+    }
+  
+    .blue_box_camera {
+      display: grid;
+      grid-template-columns: 75% 25%;
+      grid-template-rows: repeat(2, 1fr);
+      background-color: #1fa8d4;
+      color: white;
+      padding: 1em;
+      position: absolute;
+      bottom: 0;
+      height: 2em;
+    }
+  
+  .whatsUpLately_img_desc {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.5em;
+  }
+  
+  .small_photography {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .lastestProjects_group {
+    display: grid;
+    grid-row: repeat(6, 1fr);
+  }
+
+  }
+
 
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
 
-
-/* Medium only */
-@media screen and (min-width: 40em) and 
-
-
-(max-width: 63.9375em) {}
+}
 
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+
+
+  body {
+  
+  }
+
+  .main_content {
+   
+  }
+
+  .things_we_do_banner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+    text-align: center;
+  }
+
+  .thingsWeDo_groups .web_solutions {
+    grid-column: 1;
+  }
+
+  .thingsWeDo_groups .photography {
+    grid-column: 2;
+  }
+
+  .thingsWeDo_groups .web_development {
+    grid-column: 3;
+  }
+
+  .thingsWeDo_groups .web_design {
+    grid-column: 4;
+  }
+  
+  .lastestProjects_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .lastestProjects {
+    height: 10em;
+    width: 10em;
+  }
+
+  .lastestProjects .img1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .lastestProjects .img2 {
+  grid-column: 2;
+  grid-row: 1;  
+  }
+
+  .lastestProjects .img3 {
+  grid-column: 3;
+  grid-row: 1;  
+  }
+
+  .lastestProjects .img4 {
+  grid-column: 1;
+  grid-row: 2;  
+  }
+
+  .lastestProjects .img5 {
+  grid-column: 2;
+  grid-row: 2;  
+  }
+
+  .lastestProjects .img6 {
+  grid-column: 3;
+  grid-row: 2;  
+  }
+
+  .images_post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+  }
+
+  .image_post_sample .post_sample1 {
+    grid-column: 1;
+  }
+
+  .image_post_sample .post_sample2 {
+    grid-column: 2;
+  }
+
+  .image_post_sample .post_sample3 {
+    grid-column: 3;
+  }
+
+  .image_post_sample {
+    display: grid;
+  }
+
+  .image_post_sample {
+    position: relative;
+  }
+
+  .date_group {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    background-color: #e7615e;
+    color: white;
+    height: 4em;
+    width: 5em;
+    position: absolute;
+  }
+
+  .date {
+    grid-row: 1;
+  }
+
+  .day {
+    grid-row: 2;
+  }
+
+  .blue_box_camera {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #1fa8d4;
+    color: white;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    height: 2em;
+  }
+
+.whatsUpLately_img_desc {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.5em;
+}
+
+.small_photography {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  color: white;
+}
+
+.footer_author {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.footer_aboutUs {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footer_flickerPhotos {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+.twtUser_img {
+display: none;
+}
+
+
+
 
 
 /* Large only */
