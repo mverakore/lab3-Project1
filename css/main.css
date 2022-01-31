@@ -133,7 +133,6 @@ textarea {
      background-color: white;
    }
 
-<<<<<<< HEAD
    .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -165,17 +164,16 @@ textarea {
 
    .menu_blogs {
      background-color: #e7615e;
-=======
+   }
+
    .things_we_do_content {
      color: #939393;
->>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
    }
 
    .menu_portfolio {
      background-color: #1fa8d4;
    }
 
-<<<<<<< HEAD
    .menu_home2 {
      background-color: #16242f;
    }
@@ -191,8 +189,6 @@ textarea {
   .recent_tweet_header {
     font-weight: bold;
   }
-=======
->>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
 
   .h2_desc {
     color: #939393;
@@ -285,12 +281,11 @@ textarea {
    /* Small only */
 @media screen and (max-width: 39.9375em) {
 
-<<<<<<< HEAD
   html {
     display: flex;
     justify-content: center;
   }
-=======
+
   .thingsOfAbove,
   .thingsOfAbove_tabs {
     display: none;
@@ -315,9 +310,14 @@ textarea {
   display: none;
 }
 
+.hamburger_menu {
+  position: absolute;
+  right: 0%;
+  width: 40px;
+  height: 40px;
+}
 
 }
->>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
 
   body{
     width: 70%;
@@ -428,8 +428,6 @@ textarea {
   .lastestProjects_group {
     display: grid;
     grid-row: repeat(6, 1fr);
-  }
-
   }
 
 
@@ -795,5 +793,3 @@ display: none;
   h3 {
     page-break-after: avoid;
   }
-}
-
