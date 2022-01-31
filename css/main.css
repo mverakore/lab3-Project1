@@ -133,6 +133,7 @@ textarea {
      background-color: white;
    }
 
+<<<<<<< HEAD
    .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -164,12 +165,17 @@ textarea {
 
    .menu_blogs {
      background-color: #e7615e;
+=======
+   .things_we_do_content {
+     color: #939393;
+>>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
    }
 
    .menu_portfolio {
      background-color: #1fa8d4;
    }
 
+<<<<<<< HEAD
    .menu_home2 {
      background-color: #16242f;
    }
@@ -185,6 +191,8 @@ textarea {
   .recent_tweet_header {
     font-weight: bold;
   }
+=======
+>>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
 
   .h2_desc {
     color: #939393;
@@ -277,10 +285,39 @@ textarea {
    /* Small only */
 @media screen and (max-width: 39.9375em) {
 
+<<<<<<< HEAD
   html {
     display: flex;
     justify-content: center;
   }
+=======
+  .thingsOfAbove,
+  .thingsOfAbove_tabs {
+    display: none;
+  }
+
+  .footer_aboutUs,
+  .footer_flickerPhotos,
+  .footer_newsletter,
+  .form-email{
+    display: none;
+  }
+
+ .recent_tweet_header {
+   font-weight: bold;
+ }
+ 
+ .menu {
+  display: none;
+}
+
+.banner_image {
+  display: none;
+}
+
+
+}
+>>>>>>> 64e99cba300da606e54ddbcfe5ba103fc6256f5a
 
   body{
     width: 70%;
