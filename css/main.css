@@ -103,13 +103,6 @@ textarea {
      height: 35px;
    }
 
-   .hamburger_menu {
-     position: absolute;
-     right: 0%;
-     width: 40px;
-     height: 40px;
-   }
-
    .things_we_do_content {
      color: #939393;
    }
@@ -235,6 +228,12 @@ textarea {
   display: none;
 }
 
+.hamburger_menu {
+  position: absolute;
+  right: 0%;
+  width: 40px;
+  height: 40px;
+}
 
 }
 
