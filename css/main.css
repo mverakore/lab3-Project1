@@ -323,6 +323,68 @@ textarea {
     color: white;
   }
 
+  .footer_aboutUs_socialMedia_googlePlus {
+    background-color: #e46145;
+    width: 4em;
+    height: 4em;
+    border: none;
+  }
+  
+  .footer_aboutUs_socialMedia_twitter {
+    background-color: #00b0e2;
+    width: 4em;
+    height: 4em;
+    border: none;
+  }
+  
+  .footer_aboutUs_socialMedia_instagram{
+    background-color: #f6679c;
+    width: 4em;
+    height: 4em;
+    border: none;
+  }
+
+
+  .footer_aboutUs_socialMedia_facebook {
+    background-color: #527cc4;
+    width: 4em;
+    height: 4em;
+    border: none;
+  }
+
+
+  .footer_aboutUs_socialMedia_generic{
+    background-color: #fea501;
+    width: 4em;
+    height: 4em;
+    border: none;
+  }
+  
+  .footer_aboutUs_socialMedia_googlePlus > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .footer_aboutUs_socialMedia_generic > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .footer_aboutUs_socialMedia_facebook > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .footer_aboutUs_socialMedia_twitter > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .footer_aboutUs_socialMedia_instagram > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
    /* Small only */
 @media screen and (max-width: 39.9375em) {
 
@@ -362,15 +424,16 @@ textarea {
   height: 40px;
 }
 
+.lastestProjects_group > img {
+  margin-bottom: 1em;
 }
 
-
-  .header_banner{
+.header_banner{
     display: flex;
     align-items: center;
-  }
+}
 
-  .hamburger_menu {
+.hamburger_menu {
     position: absolute;
     right: 20%;
     width: 40px;
@@ -398,13 +461,12 @@ textarea {
   }
 
   .thingsWeDo_groups {
-    height: 20em;
+    height: 10em;
     gap: 1em;
     display: grid;
     grid-template-columns: 20% 80%; 
-    grid-template-rows: 2em auto;
+    grid-template-rows: 1em auto;
   }
-    
     
     .thingsWeDo_img {
       grid-column: 1;
@@ -454,6 +516,10 @@ textarea {
     .november {
       font-size: 0.8em;
     }
+
+    .lastestProjects.img6 {
+      margin-bottom: 2em;
+    }
   
     .blue_box_camera {
       display: flex;
@@ -461,10 +527,10 @@ textarea {
       grid-template-rows: repeat(2, 1fr);
       background-color: #1fa8d4;
       color: white;
-      padding: 1em;
-      position: absolute;
+      position: relative;
+      padding: 0.7em;
       bottom: 0;
-      height: 2em;
+      height: 3em;
     }
 
   .image_post_sample {
@@ -472,19 +538,83 @@ textarea {
   }
 
   .blue_box_camera_img {
-    padding: 0.5em;
+    padding: 1em;
+    width: 1em;
+    height: 1em;
+    margin-left: 4em;
+    background-color: #3295c0;
   }
   
   .whatsUpLately_img_desc {
     grid-column: 1;
     grid-row: 1;
+    font-weight: bold;
+    display: flex;
   }
-  
+
+  .small_photography{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+  }
 
   .lastestProjects_group {
     display: grid;
     grid-row: repeat(6, 1fr);
   }
+
+  .tweets_tweet2 {
+    display: flex;
+  }
+
+  .tweets_tweet1 {
+    display: flex;
+  }
+
+  .tweetContent {
+    margin-left: 0.5em;
+  }
+
+  .things_we_do_content {
+    font-size: 0.8em;
+
+  }
+
+  .h2_desc {
+    margin:0%;
+    font-size: 0.8em;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    margin: 0%;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+
+  .author_content{
+    display: grid;
+  }
+
+  .footer_content{
+    padding-top: 2em; 
+
+  }
+
+  .profile_img {
+    height: 10em;
+    width: 10em;
+  }
+
+  .footer_aboutUs_socialMedia {
+    padding-bottom: 2em;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  
+}
 
 
 /*Medium only */
@@ -604,14 +734,28 @@ textarea {
 /* Large and up */
 @media screen and (min-width: 64em) {
 
-
-  body {
-  
-  }
-
-/* SORRY if there was a grid for this but pls grid this up */
   .menu {
     display: flex;
+    position: absolute;
+    width: 45em;
+    height: 6em;
+  }
+
+  .h2_desc {
+    margin-bottom: 3em;
+  }
+  
+  .menu_button.menu_portfolio > img {
+    width: 2em;
+    padding-left: 1em;
+  }
+
+  .menu_button_icons {
+    width: 2em;
+    align-self: center;
+  }
+
+  .banner_image_menu {
     position: absolute;
   }
 
@@ -636,10 +780,6 @@ textarea {
     display: grid;
   }
 
-  .main_content {
-   
-  }
-
   .things_we_do_banner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -654,7 +794,8 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-    
+  
+
 
   .thingsWeDo_groups .web_solutions {
     grid-column: 1;
@@ -695,8 +836,8 @@ textarea {
   }
 
   .lastestProjects {
-    height: 10em;
-    width: 10em;
+    width: 100%;
+    height: 100%;
   }
 
   .lastestProjects .img1 {
@@ -782,16 +923,25 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
     background-color: #1fa8d4;
     color: white;
-    padding: 1em;
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 2em;
+  }
+
+  .blue_box_camera_img {
+    width: 0.7em;
+    background-color: #3295c0;
+    padding: 0.7em;
   }
 
 .whatsUpLately_img_desc {
   grid-column: 1;
   grid-row: 1;
-  font-size: 1.5em;
+  font-size: 0.7em;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  height: 0%;
 }
 
 .small_photography {
@@ -799,10 +949,21 @@ textarea {
   grid-row: 2;
 }
 
+.whatsUpLately_img {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsUpLately {
+  margin-top: 10em;
+}
+
 /* FOOTER */
+
 .footer_content {
   display: grid;
 }
+
 .footer_author {
   grid-column: 1 / 4;
   grid-row: 1;
@@ -819,10 +980,94 @@ textarea {
 }
 
 
-.twtUser_img {
+.banner_image_full {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.left_arrow {
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+.footer_newsletter_header, .footer_newsletterContent {
+  color: white;
+  display: flex;
+}
+
+.footer_aboutUs {
+  color: white;
+}
+
+.form-email {
+  display: flex;
+  background-color: tomato;
+  width: 14em;
+  height: 2em;
+}
+
+.paperairplane {
+  width: 2.5em;
+  margin-left: 5em;
+  height: 2em;
+  background-color: #ffb901;
+  border: none;
+}
+
+.paperairplane > img {
+  width: 1em;
+  height: 1em;
+}
+
+.email {
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  padding-left: 0.2em;
+  color: white;
 
 }
 
+.flickr_photos_header {
+  color: white;
+  display: flex;
+}
+
+.footer_flickerPhotos {
+  display: flex;
+}
+
+.footer_flickerPhotos > img {
+  width: 4em;
+  height: 4em;
+  padding: 0.5em;
+}
+
+.profile_img {
+  height: 4em;
+  width: 4em;
+}
+
+.footer_author {
+  display: flex;
+  padding-top: 3em;
+}
+
+.author_name {
+
+}
+
+.author_content {
+  font-size: 0.7em;
+
+}
+
+
+}
 
 
 /* Large only */
@@ -1013,4 +1258,4 @@ textarea {
   }
 }
 
-}
+
