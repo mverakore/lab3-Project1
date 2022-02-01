@@ -92,16 +92,29 @@ textarea {
 /* ==========================================================================
   Layout 
    ========================================================================== */
+  .main_content {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: repeat(auto, 4fr);
+    }
 
-   .header_banner {
-     display: flex;
-     align-items: center;
-     margin: 0;
-   }
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-   ul {
+  .logoAndMenu {
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+  }
+
+  ul {
     list-style: none;
     margin: 0;
+  }
+
+  .header_banner{
+    grid-column: 2;
   }
 
    .metropolis_logo {
@@ -112,11 +125,29 @@ textarea {
 
    .menu {
      color: white;
+     grid-column: 3;
    }
 
    .menu_button {
      display: flex;
      justify-content: center;
+     width: 60em;
+   }
+
+  .thingsWeDo {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .whatsUpsLately {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+   .header_banner {
+     display: flex;
+     align-items: center;
+     margin: 0;
    }
 
    .banner {
@@ -180,10 +211,16 @@ textarea {
 
    .things_we_do_content {
      color: #939393;
+     grid-row: 3;
    }
 
    .things_we_do_topic {
      font-weight: bold;
+     grid-row: 2;
+   }
+
+   .thingsWeDo_img {
+     grid-row: 1;
    }
 
   .recent_tweet_header {
@@ -236,7 +273,14 @@ textarea {
   footer {
     background-color: #16242f;
     width: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
   }
+
+  .footer_content {
+    grid-column: 2;
+  }
+
 
   .tweetContent{
     color: #ffff;
@@ -320,9 +364,6 @@ textarea {
 
 }
 
-  body{
-    width: 70%;
-  }
 
   .header_banner{
     display: flex;
@@ -360,9 +401,10 @@ textarea {
     height: 20em;
     gap: 1em;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 80%; 
     grid-template-rows: 2em auto;
   }
+    
     
     .thingsWeDo_img {
       grid-column: 1;
@@ -445,16 +487,6 @@ textarea {
   }
 
 
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-
-  .menu {
-    display: flex;
-  }
-
-}
-
 /*Medium only */
 @media screen and (min-width: 40em) and 
 (max-width: 63.9375em) {
@@ -466,6 +498,105 @@ textarea {
   .hamburger_menu {
     display: none;
   }
+
+  .banner {
+    display: visible;
+  }
+
+  .images_post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .things_we_do_banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    text-align: center;
+  }
+
+  .thingsWeDo_groups {
+    height: 20em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+    
+
+  .thingsWeDo_groups .web_solutions {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .thingsWeDo_groups .photography {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .thingsWeDo_groups .web_development {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .thingsWeDo_groups .web_design {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .thingsWeDo_img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .things_we_do_header {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .things_we_do_content {
+    grid-column: 1 / 4;
+    grid-row: 3;
+  }
+
+  .lastestProjects_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .img1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .img2{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .img3{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .img4{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .img5{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .img6{
+    grid-column: 2;
+    grid-row: 3;
+  }
+
 
 }
 
@@ -512,9 +643,18 @@ textarea {
   .things_we_do_banner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5em;
+    gap: 3em;
     text-align: center;
   }
+
+  .thingsWeDo_groups {
+    height: 20em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+    
 
   .thingsWeDo_groups .web_solutions {
     grid-column: 1;
@@ -530,6 +670,21 @@ textarea {
 
   .thingsWeDo_groups .web_design {
     grid-column: 4;
+  }
+
+  .thingsWeDo_img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .things_we_do_header {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .things_we_do_content {
+    grid-column: 1 / 4;
+    grid-row: 3;
   }
   
   .lastestProjects_group {
@@ -609,6 +764,10 @@ textarea {
     position: absolute;
   }
 
+  .g1 {
+    display: none;
+  }
+
   .date {
     grid-row: 1;
   }
@@ -641,12 +800,9 @@ textarea {
 }
 
 /* FOOTER */
-
-footer {
+.footer_content {
   display: grid;
-  color: white;
 }
-
 .footer_author {
   grid-column: 1 / 4;
   grid-row: 1;
@@ -664,7 +820,7 @@ footer {
 
 
 .twtUser_img {
-display: none;
+
 }
 
 
