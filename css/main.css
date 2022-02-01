@@ -385,6 +385,37 @@ textarea {
     height: 1.5em;
   }
 
+  .socialMediaButton {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .footer_author {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 3em;
+  }
+  
+  .profile_img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  
+  .author_name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .author_content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  footer {
+    bottom: 0%;
+  }
+
    /* Small only */
 @media screen and (max-width: 39.9375em) {
 
@@ -602,12 +633,17 @@ textarea {
   }
 
   .profile_img {
-    height: 10em;
-    width: 10em;
+    height: 6em;
+    width: 6em;
   }
 
   .footer_aboutUs_socialMedia {
-    padding-bottom: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .recent_tweet_header {
+    margin-bottom: 3em;
   }
 }
 
@@ -690,11 +726,37 @@ textarea {
     grid-column: 1 / 4;
     grid-row: 3;
   }
+  
+  .images_post {
+    gap: 1em;
+  }
+
+  .image_post_sample {
+    color: white;
+    position: relative;
+  }
+
+  .date_group {
+    background-color: #e46145;
+    width: 20%;
+    position: absolute;
+  }
+
+  .blue_box_camera {
+    background-color: #00b0e2;
+  }
+
+  .blue_box_camera_img {
+    width: 5%;
+    height: 5%;
+  }
+
 
   .lastestProjects_group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
   }
 
   .img1{
@@ -727,6 +789,76 @@ textarea {
     grid-row: 3;
   }
 
+  /* FOOTER */
+
+  .footer_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30% 40% 30%;
+    color: white;
+    padding-top: 3em;
+    column-gap: 1em;
+    row-gap: 2em;
+  }
+
+  .footer_author {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .footer_aboutUs {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .footer_aboutUs_header,
+  .recent_tweet_header,
+  .footer_newsletter_header {
+    margin-bottom: 3em;
+  }
+
+  .footer_flickerPhoto {
+    width: 80%;
+    height: auto;
+  }
+
+  .footer_flickerPhotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3em repeat(2, 1fr);
+    row-gap: 1em;
+  }
+
+  .flickr_photos_header {
+    grid-column: 1;
+    grid-row: 1;
+    height: 1em;
+  }
+
+  .flickerPhoto1 {
+    grid-column: 1;
+    grid-row:  2;
+  }
+  .flickerPhoto2 {
+    grid-column: 2;
+    grid-row:  2;
+  }
+  .flickerPhoto3 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .flickerPhoto4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .flickerPhoto5 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .flickerPhoto6 {
+    grid-column: 3;
+    grid-row: 3;
+  }
 
 }
 
@@ -962,10 +1094,15 @@ textarea {
 
 .footer_content {
   display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 75%;
+  padding-top: 3em;
+  row-gap: 5em;
+  column-gap: 1em;
 }
 
 .footer_author {
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
   grid-row: 1;
 }
 
@@ -974,9 +1111,45 @@ textarea {
   grid-row: 2;
 }
 
+.footer_recentTweets {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .footer_flickerPhotos {
   grid-column: 2;
   grid-row: 2;
+}
+
+.footer_newsletter {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.footer_aboutUs_socialMedia {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 0.1em;
+}
+
+.footer_aboutUs_socialMedia_facebook {
+  grid-column: 1;
+}
+
+.footer_aboutUs_socialMedia_googlePlus {
+  grid-column: 2;
+}
+
+.footer_aboutUs_socialMedia_twitter {
+  grid-column: 3;
+}
+
+.footer_aboutUs_socialMedia_instagram {
+  grid-column: 4;
+}
+
+.footer_aboutUs_socialMedia_generic {
+  grid-column: 5;
 }
 
 
@@ -1037,9 +1210,11 @@ textarea {
   display: flex;
 }
 
-.footer_flickerPhotos {
-  display: flex;
-}
+/*.flickerPhotos_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}*/
 
 .footer_flickerPhotos > img {
   width: 4em;
@@ -1047,23 +1222,25 @@ textarea {
   padding: 0.5em;
 }
 
-.profile_img {
-  height: 4em;
-  width: 4em;
+.footer_author {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: repeat(2, auto);
 }
 
-.footer_author {
-  display: flex;
-  padding-top: 3em;
+.profile_img {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
 .author_name {
-
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .author_content {
-  font-size: 0.7em;
-
+  grid-column: 2;
+  grid-row: 2;
 }
 
 
