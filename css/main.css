@@ -102,10 +102,17 @@ textarea {
       font-weight: 400;
     }
 
-  .header {
+    .metrolicsEmphasized {
+      color: #1eafde;
+      font-weight: 400;
+    }
+
+  .page__intro {
     grid-column: 2;
     grid-row: 1;
-  }
+    display: flex;
+    justify-content: center;
+  text-align: center;  }
 
   .logoAndMenu {
     display: grid;
@@ -117,7 +124,7 @@ textarea {
     margin: 0;
   }
 
-  .header_banner{
+  .page_header{
     grid-column: 2;
   }
 
@@ -148,7 +155,7 @@ textarea {
     grid-row: 3;
   }
 
-   .header_banner {
+   .page_header {
      display: flex;
      align-items: center;
      margin: 0;
@@ -226,7 +233,7 @@ textarea {
     font-weight: bold;
   }
 
-  .h2_desc {
+  .sectionHeadingDesc {
     color: #939393;
     text-align: center;
   }
@@ -459,7 +466,7 @@ textarea {
   margin-bottom: 1em;
 }
 
-.header_banner{
+.page_header{
     display: flex;
     align-items: center;
 }
@@ -545,12 +552,12 @@ textarea {
       grid-row: 2;
     }
 
-    .november {
+    .monthAndYear {
       font-size: 0.8em;
     }
 
   
-    .blue_box_camera {
+    .photoDesc {
       display: flex;
       grid-template-columns: 75% 25%;
       grid-template-rows: repeat(2, 1fr);
@@ -620,7 +627,7 @@ textarea {
 
   }
 
-  .h2_desc {
+  .sectionHeadingDesc {
     margin:0%;
     font-size: 0.8em;
     margin-bottom: 2em;
@@ -812,7 +819,7 @@ textarea {
     position: absolute;
   }
 
-  .blue_box_camera {
+  .photoDesc {
     background-color: #00b0e2;
     height: 3em;
     position: relative;
@@ -952,7 +959,7 @@ textarea {
     height: 6em;
   }
 
-  .h2_desc {
+  .sectionHeadingDesc {
     margin-bottom: 3em;
   }
   
@@ -1156,11 +1163,11 @@ textarea {
     grid-row: 2;
   }
 
-  .november {
+  .monthAndYear {
     font-size: 0.7em;
   }
 
-  .blue_box_camera {
+  .photoDesc {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: repeat(2, 1fr);
