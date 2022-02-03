@@ -566,6 +566,9 @@ textarea {
       bottom: 0;
       height: 3em;
       }
+
+    .lastestprojects .g2  {
+      position: absolute;
     }
 
   .image_post_sample {
@@ -670,6 +673,7 @@ textarea {
     column-gap: 5em;
   }
 
+}
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
