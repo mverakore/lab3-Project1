@@ -700,6 +700,18 @@ textarea {
     padding-left: 1em;
   }
 
+  .menu {
+    padding-left: 1em;
+  }
+
+  .Metrolics_header {
+    margin-bottom: 0;
+  }
+
+  .metropolis_logo {
+    margin-top: 7%;
+  }
+
   .left_arrow,.right_arrow {
     position: absolute;
     top: 45%;
@@ -1149,7 +1161,7 @@ textarea {
     position: absolute;
     align-items: flex-start;
     z-index: 1;
-    left: 11.5%;
+    left: 20%;
     top: 34%;
   }
 
