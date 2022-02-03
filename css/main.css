@@ -104,7 +104,7 @@ textarea {
 
     .metrolicsEmphasized {
       color: #1eafde;
-      font-weight: 400;
+      font-style: normal;
     }
 
   .page__intro {
@@ -144,6 +144,7 @@ textarea {
      justify-content: center;
      width: 60em;
    }
+
 
   .thingsWeDo {
     grid-column: 2;
@@ -185,10 +186,6 @@ textarea {
 
   .menu_button_icons {
     grid-row: 1;
-  }
-
-  .menu_button {
-
   }
 
    .menu_home1 {
@@ -686,21 +683,52 @@ textarea {
 
   .menu {
     display: flex;
-    position: absolute;
+    position: relative;
   }
 
   .menu > div {
     height: 100%;
   }
 
-  .banner_image_full {
-    width: 100%;
-    height: 20em;
+  .menu_button_icons {
+    width: 2em;
+    align-self: center;
   }
 
-  .banner_image {
+  .menu_button.menu_portfolio > img {
+    width: 2em;
+    padding-left: 1em;
+  }
+
+  .left_arrow,.right_arrow {
+    position: absolute;
+    top: 45%;
+    border-style: hidden;
+    background-color: transparent;
+    color: white;
+    border: 0.2em solid;
+    border-radius: 50%;
+  }
+  
+  .left_arrow {
+   right: 75%;
+  }
+  
+  .right_arrow {
+    left: 75%;
+   }
+
+  .banner_image_full {
+    width: 100%;
+    height: 15em;
     display: flex;
-    width: 50%;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .banner_image {
+    display: grid;
+    object-fit: cover;
     height: 100%;
   }
 
@@ -717,6 +745,10 @@ textarea {
     position: absolute;
     align-items: flex-end;
     justify-content: flex-end;
+    z-index: 1;
+    left: 5%;
+    top: 15%;
+    width: 50%;
   }
 
   .banner_text_metro,.banner_text_retina,.banner_text_respon{
@@ -819,6 +851,26 @@ textarea {
     position: absolute;
   }
 
+  .date_group {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    background-color: #e7615e;
+    color: white;
+    height: 3em;
+    width: 4em;
+    position: absolute;
+    padding-top: 0.2em;
+  }
+
+  .day {
+    text-align: center;
+  }
+
+  .monthAndYear {
+    font-size: 0.7em;
+    margin-left: 0.5em;
+  }
+
   .photoDesc {
     background-color: #00b0e2;
     height: 3em;
@@ -826,13 +878,90 @@ textarea {
   }
 
   .fa-camera, .fa-file{
-    position: absolute;
+      position: absolute;
+      margin-top: 0.3em;
+      width: 1em;
+      height: 1em;
+      padding: 0.7em;
+      margin-inline-start: 18em;
+  }
+
+  .sample_image_text_post{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 0.7em;
+    margin: 0%;
+    display: flex;
+    height: 0%;
+    font-size: 0.8em;
+    padding-left: 0.7em;
+    font-size: 1em;
   }
 
   .small_photography {
-    margin-top: 0%;
+    padding-left: 1em;
+    margin: 0%;
+    padding-top: 1.5em;
   }
 
+  .whatsUpLately .g2 {
+    z-index: -1;
+  }
+
+  .g2 .photoDesc {
+    background-color: transparent;
+  }
+
+  .g2 .date_group{
+    display: none;
+  }
+
+
+
+  .color_overlay_g1 {
+    background-color: rgb(31, 195, 236,75%);
+    height: 95.5%;
+  }
+
+  .lastestprojects .g1 {
+    z-index: -1;
+    position: relative;
+  }
+  
+.lastestprojects .g1 .photoDesc {
+    z-index: 1;
+    position: absolute;
+    height: 6em;
+    top: 84%;
+    margin-left: 0.5em;
+    background-color: transparent;
+}
+  
+.whatsUpLately .g2 .photoDesc {
+  z-index: 1;
+  position: absolute;
+  height: 6em;
+  top: 84%;
+  margin-left: 0.5em;
+}
+
+ .whatsUpLately_img {
+  z-index: -1;
+  position: relative;
+}
+  .color_overlay_g2 {
+  background-color: rgb(31, 195, 236);
+  height: 82.5%;
+  }
+
+  .whatsUpLately .g1 .photoDesc {
+    display: none;
+  }
+
+  .according_tabs_section_img {
+    display: flex;
+    justify-content: center;
+  }
 
   .lastestProjects_group {
     display: grid;
@@ -875,6 +1004,22 @@ textarea {
     display: none;
   }
 
+  .lastestprojects .g2 .photoDesc {
+    display: none;
+  }
+
+  .lastestprojects .g3 .photoDesc {
+    display: none;
+  }
+  .lastestprojects .g4 .photoDesc {
+    display: none;
+  }
+  .lastestprojects .g5 .photoDesc {
+    display: none;
+  }
+  .lastestprojects .g6 .photoDesc {
+    display: none;
+  }
   /* FOOTER */
 
   .footer_content {
@@ -972,7 +1117,6 @@ textarea {
     align-self: center;
   }
 
-
   .hamburger_menu {
     display: none;
   }
@@ -990,12 +1134,25 @@ textarea {
     display: grid;
   }
 
+  .banner_image_full {
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+
   .banner_image_menu {
     display: flex;
     justify-content: flex-start;
     position: absolute;
     align-items: flex-start;
+    z-index: 1;
+    left: 11.5%;
+    top: 34%;
   }
+
   .banner_text_metro,.banner_text_retina,.banner_text_respon{
     padding-left: 1em;
     margin: 0.2em;
@@ -1154,6 +1311,10 @@ textarea {
     display: none;
   }
 
+  .color_overlay_g1 {
+    display: none;
+  }
+
   .date {
     grid-row: 1;
     text-align: center;
@@ -1167,24 +1328,24 @@ textarea {
     font-size: 0.7em;
   }
 
-  .photoDesc {
+  .whatsUpLately .photoDesc {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: repeat(2, 1fr);
     background-color: #1fa8d4;
     color: white;
-    position: relative;
     bottom: 0;
     height: 2em;
-    padding-left: 1em;
-    padding: 0.3em;
+    padding: 0.5em;
   }
 
   .fa-camera,.fa-file {
-    width: 0.7em;
-    background-color: #3295c0;
-    padding: 0.7em;
     position: absolute;
+    margin-top: 0.3em;
+    width: 1em;
+    height: 1em;
+    padding: 0.7em;
+    margin-inline-start: 13.5em;
   }
 
 .sample_image_text_post{
@@ -1195,6 +1356,7 @@ textarea {
   padding: 0%;
   display: flex;
   height: 0%;
+  font-size: 0.8em;
 }
 
 .small_photography {
@@ -1202,6 +1364,10 @@ textarea {
   grid-row: 2;
   margin-top: 0%;
   font-size: 0.5em;
+}
+
+.fa-file {
+  color: white;
 }
 
 .whatsUpLately_img {
@@ -1213,6 +1379,63 @@ textarea {
   margin-top: 10em;
 }
 
+/* the struggle is real  */
+
+.lastestprojects .photoDesc {
+  z-index: 2;
+  position: absolute;
+  height: 6em;
+  top: 80%;
+  margin-left: 0.5em;
+}
+
+.lastestprojects .sample_image_text_post,.small_photography {
+  color: white;
+}
+
+.lastestprojects .sample_image_text_post {
+  font-size: 1em;
+}
+
+.lastestprojects .small_photography {
+  top: 20%;
+  font-size: 0.7em;
+}
+
+.lastestprojects .g2 {
+  z-index: -2;
+}
+
+.color_overlay_g2 {
+  background-color: rgb(31, 195, 236,75%);
+  height: 93.5%;
+}
+
+
+.partners_section {
+  display: flex;
+  width: 100%;
+}
+
+.sponsor_image {
+  width: 100%;
+}
+
+.lastestprojects .g3 .photoDesc {
+  display: none;
+}
+.lastestprojects .g4 .photoDesc {
+  display: none;
+}
+.lastestprojects .g5 .photoDesc {
+  display: none;
+}
+.lastestprojects .g6 .photoDesc {
+  display: none;
+}
+.lastestprojects .g7 .photoDesc {
+  display: none;
+}
 /* FOOTER */
 
 .footer_content {
@@ -1284,18 +1507,25 @@ textarea {
 }
 
 
-.banner_image_full {
-  width: 100%;
-  height: 25em;
-  display: flex;
-  justify-content: center;
-}
 
-
-.left_arrow {
+.left_arrow,.right_arrow {
   position: absolute;
+  top: 45%;
+  border-style: hidden;
+  background-color: transparent;
+  color: white;
+  border: 0.2em solid;
   border-radius: 50%;
 }
+
+.left_arrow {
+ right: 86%;
+}
+
+.right_arrow {
+  left: 86%;
+ }
+
 
 
 .footer_newsletter_header, .footer_newsletterContent {
@@ -1341,11 +1571,11 @@ textarea {
   display: flex;
 }
 
-/*.flickerPhotos_group {
+.flickerPhotos_group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-}*/
+}
 
 .footer_flickerPhotos > img {
   width: 4em;
@@ -1374,6 +1604,11 @@ textarea {
 .author_content {
   grid-column: 2;
   grid-row: 2;
+}
+
+.according_tabs_section_img {
+  display: flex;
+  justify-content: center;
 }
 
 
